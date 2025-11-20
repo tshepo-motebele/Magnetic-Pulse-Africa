@@ -1,3 +1,7 @@
 "appsettings*.json" 
 "obj/" 
 "bin/" 
+"MagneticPulseAfrica/appsettings*.json" 
+"MagneticPulseAfrica/obj/" 
+"MagneticPulseAfrica/bin/" 
+".vs/" 
