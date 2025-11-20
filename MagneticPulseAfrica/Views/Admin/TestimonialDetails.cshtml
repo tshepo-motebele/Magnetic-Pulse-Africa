@@ -1,0 +1,107 @@
+﻿@model MagneticPulseAfrica.Models.TestimonialModel
+@{
+    ViewData["Title"] = "Testimonial Details";
+}
+
+<div class="container-fluid py-4">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="mb-0">Testimonial Details</h3>
+                <div>
+                    @if (!Model.IsApproved)
+                    {
+                        <button class="btn btn-success me-2" onclick="approveTestimonial('@Model.Id')">
+                            <i class="fas fa-check me-2"></i>Approve
+                        </button>
+                    }
+                    <button class="btn btn-danger" onclick="deleteTestimonial('@Model.Id')">
+                        <i class="fas fa-trash me-2"></i>Delete
+                    </button>
+                    <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Back
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <h5 class="text-muted mb-2">Customer Name</h5>
+                        <p class="h4">@Model.Name</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="text-muted mb-2">Rating</h5>
+                        <div class="text-warning h4">
+                            @for (var i = 0; i < Model.Rating; i++)
+                            {
+                                <i class="fas fa-star"></i>
+                            }
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="text-muted mb-2">Testimonial</h5>
+                        <p class="lead">@Model.TestimonialText</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="text-muted mb-2">Submitted On</h5>
+                        <p>@Model.CreatedAt.ToString("MMM dd, yyyy HH:mm")</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    @if (!string.IsNullOrEmpty(Model.VideoUrl))
+                    {
+                        <div class="mb-4">
+                            <h5 class="text-muted mb-2">Video Testimonial</h5>
+                            <div class="ratio ratio-16x9">
+                                <video controls class="rounded">
+                                    <source src="@Model.VideoUrl" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function approveTestimonial(id) {
+            if (confirm('Are you sure you want to approve this testimonial?')) {
+                var token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                fetch(`/Admin/ApproveTestimonial/${id}`, {
+                    method: 'POST',
+                    headers: {
+                        'RequestVerificationToken': token,
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Hide the approve button
+                            document.querySelector('.btn-success').style.display = 'none';
+
+                            // Show success message
+                            alert('Testimonial approved successfully');
+
+                            // Reload the page
+                            setTimeout(() => {
+                                location.reload();
+                            }, 1500);
+                        } else {
+                            alert(data.message || 'Error approving testimonial');
+                        }
+                    })
+                    .catch(error => {
+                        alert('Error approving testimonial: ' + error);
+                    });
+            }
+        }
+    </script>
+}

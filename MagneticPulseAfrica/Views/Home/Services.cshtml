@@ -1,0 +1,643 @@
+﻿@model MagneticPulseAfrica.Models.ServicesViewModel
+@using MagneticPulseAfrica.Models
+@{
+    ViewBag.Title = "Services - Magnetic Pulse Africa";
+}
+
+<style>
+    .services {
+        background-color: #f4f7f9;
+        padding: 80px 0;
+    }
+
+    .services-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .services-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .services-header h1 {
+        color: #007bff;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .services-description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        color: #6c757d;
+        line-height: 1.6;
+    }
+
+    .service-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .service-card {
+        flex-basis: calc(50% - 15px);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        padding: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .service-card h2 {
+        color: #007bff;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+    }
+
+    .service-card p {
+        color: #6c757d;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .service-pricing {
+        background-color: #f1f6ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .book-appointment {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .btn-book {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-book:hover {
+        background-color: #0056b3;
+    }
+
+    .testimonial-section {
+        background-color: #f8f9fa;
+        padding: 80px 0;
+    }
+
+    .testimonial-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-form h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #6c757d;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        cursor: pointer;
+        color: #ddd;
+        font-size: 30px;
+    }
+
+    .rating label:before {
+        content: '★';
+    }
+
+    .rating input:checked ~ label {
+        color: #007bff;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #0056b3;
+    }
+
+    .testimonial-form {
+        max-width: 800px;
+    }
+
+    .video-upload-container {
+        margin-bottom: 20px;
+    }
+
+    .video-preview {
+        width: 100%;
+        max-width: 640px;
+        margin: 10px auto;
+        display: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .upload-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .btn-upload {
+        border: 2px dashed #007bff;
+        color: #007bff;
+        background-color: white;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .upload-btn-wrapper input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .validation-message {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 5px;
+    }
+
+    .testimonials-display {
+        padding: 60px 0;
+        background-color: #ffffff;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .testimonial-item {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease;
+    }
+
+        .testimonial-item:hover {
+            transform: translateY(-5px);
+        }
+
+    .testimonial-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .testimonial-info {
+        flex-grow: 1;
+    }
+
+    .testimonial-name {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-rating {
+        color: #ffc107;
+        font-size: 18px;
+    }
+
+    .testimonial-text {
+        color: #6c757d;
+        line-height: 1.6;
+        font-style: italic;
+    }
+
+    .testimonial-video {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    @@media screen and (max-width: 480px) {
+    /* Container adjustments */
+    .services {
+        padding: 40px 0;
+    }
+
+    .services-container {
+        padding: 0 10px;
+    }
+
+    /* Header adjustments */
+    .services-header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .services-description {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+        padding: 0 5px;
+    }
+
+    /* Service cards adjustments */
+    .service-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        flex-basis: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .service-card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    /* Service pricing adjustments */
+    .service-pricing {
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+
+    .service-pricing ul {
+        padding-left: 15px;
+    }
+
+    .service-pricing li {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    /* Button adjustments */
+    .book-appointment {
+        margin-top: 25px;
+    }
+
+    .btn-book {
+        width: 100%;
+        max-width: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        display: block;
+    }
+}
+
+/* Additional optimization for very small devices */
+@@media screen and (max-width: 320px) {
+    .services-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-pricing {
+        padding: 10px;
+    }
+}
+   
+</style>
+
+<section class="services section" id="services">
+    <div class="services-container">
+        <div class="services-header">
+            <h1>Our Services</h1>
+            <p class="services-description">
+                Magnetic Pulse Afrika is dedicated to providing PEMF Device (Boboski™) rentals 
+                to support patients with various medical conditions. Our experienced team 
+                understands the potential benefits of our medical device.
+            </p>
+        </div>
+
+        <div class="service-details">
+            <div class="service-card">
+                <h2>Rental Services</h2>
+                <p>
+                    We offer the Boboski™ PEMF Device exclusively through our rental program. 
+                    Our devices are designed to potentially assist with various medical conditions.
+                </p>
+                <div class="service-pricing">
+                    <strong>Pricing:</strong>
+                    <ul>
+                        <li>Minimum rental starts from R1,500 per month</li>
+                        <li>Personalized quotations available after consultation</li>
+                        <li>Tailored to your specific needs</li>
+                    </ul>
+                </div>
+                <p>
+                    <strong>Important Note:</strong> We do not claim to cure any diseases or injuries. 
+                    Our device may provide potential benefits as outlined in our home page.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Ongoing Support</h2>
+                <p>
+                    At Magnetic Pulse Afrika, we prioritize our customers' journey and 
+                    comprehensive care throughout their device rental experience.
+                </p>
+                <ul>
+                    <li>Weekly communication encouraged</li>
+                    <li>Regular check-ins to track progress</li>
+                    <li>Milestone tracking during consultation</li>
+                    <li>Personalized guidance and support</li>
+                </ul>
+                <p>
+                    Our team is committed to ensuring you receive the best possible 
+                    support and understanding of the PEMF device's potential benefits.
+                </p>
+            </div>
+        </div>
+
+        <div class="book-appointment">
+            <a href="@Url.Action("Index", "BookConsultation")" class="btn-book">Book Consultation</a>
+        </div>
+    </div>
+</section>
+<section class="testimonials-display">
+    <div class="services-container">
+        <div class="services-header">
+            <h1>What Our Clients Say</h1>
+            <p class="services-description">
+                Read about the experiences of those who have benefited from our PEMF Device rental services.
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            @if (Model.Testimonials != null && Model.Testimonials.Any())
+            {
+                foreach (var testimonial in Model.Testimonials)
+                {
+                    <div class="testimonial-item">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                @testimonial.Name?.Substring(0, 1).ToUpper()
+                            </div>
+                            <div class="testimonial-info">
+                                <div class="testimonial-name">@testimonial.Name</div>
+                                <div class="testimonial-rating">
+                                    @for (int i = 0; i < testimonial.Rating; i++)
+                                    {
+                                        <span>★</span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-text">
+                            @testimonial.TestimonialText
+                        </div>
+                        @if (!string.IsNullOrEmpty(testimonial.VideoUrl))
+                        {
+                            <video class="testimonial-video" controls>
+                                <source src="@testimonial.VideoUrl" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        }
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12 text-center">
+                    <p>No testimonials available yet. Be the first to share your experience!</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<section class="testimonial-section" id="testimonials">
+    <div class="services-container">
+        <div class="testimonial-form">
+            <h2>Share Your Experience</h2>
+            <form id="testimonialForm" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <label for="Name">Your Name</label>
+                    <input type="text" id="Name" name="Name" class="form-control" required>
+                    <span class="validation-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Your Rating</label>
+                    <div class="rating">
+                        @for (int i = 5; i >= 1; i--)
+                        {
+                            <input type="radio" id="star@(i)" name="Rating" value="@i" required>
+                            <label for="star@(i)"></label>
+                        }
+                    </div>
+                    <span class="validation-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="TestimonialText">Your Testimonial</label>
+                    <textarea id="TestimonialText" name="TestimonialText" class="form-control" rows="5" required></textarea>
+                    <span class="validation-message"></span>
+                </div>
+
+                <div class="video-upload-container">
+                    <label>Share Your Video Review (Optional)</label>
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="btn-upload">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                            Upload Video
+                        </button>
+                        <input type="file" name="videoFile" id="videoUpload" accept="video/mp4,video/quicktime,video/x-msvideo">
+                    </div>
+                    <p class="file-requirements">Maximum file size: 100MB. Supported formats: MP4, MOV, AVI</p>
+                    <div class="upload-status"></div>
+                    <video id="videoPreview" class="video-preview" controls></video>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Testimonial</button>
+            </form>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    <!-- Core jQuery and Validation Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+            integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"
+            integrity="sha512-xrGL3GyyFwB/nYvCo+IOmq9cj46Qn7Y/62jtch3iBH3pY8iI7OVNE3uw1FSq4R/u4OtHyKXnas/gqH2PdwBF4A=="
+            crossorigin="anonymous"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        $(document).ready(function () {
+            $("#testimonialForm").on("submit", function (e) {
+                e.preventDefault();
+
+                var form = $(this);
+                var formData = new FormData(this);
+
+                // Disable submit button
+                var submitButton = form.find('button[type="submit"]');
+                submitButton.prop('disabled', true);
+
+                $.ajax({
+                    url: '@Url.Action("Submit", "Testimonial")',
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        if (response.success) {
+                            alert('Thank you for your testimonial! We will review and display it soon.');
+                            form[0].reset();
+                            $('#videoPreview').hide();
+                            $('.upload-status').text('');
+                        } else {
+                            alert(response.message || 'There was an error submitting your testimonial.');
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        alert('There was an error submitting your testimonial. Please try again.');
+                        console.error('Error:', error);
+                    },
+                    complete: function () {
+                        submitButton.prop('disabled', false);
+                    }
+                });
+            });
+
+            // Video upload handler
+            $("#videoUpload").on("change", function (e) {
+                const file = e.target.files[0];
+                const videoPreview = document.getElementById('videoPreview');
+                const uploadStatus = $('.upload-status');
+                const maxSize = 100 * 1024 * 1024; // 100MB
+
+                if (file) {
+                    // Reset status
+                    uploadStatus.text('');
+                    videoPreview.style.display = 'none';
+
+                    // Validate file size
+                    if (file.size > maxSize) {
+                        uploadStatus.text('File is too large. Please select a file under 100MB.').css('color', '#dc3545');
+                        this.value = '';
+                        return;
+                    }
+
+                    // Validate file type
+                    const validTypes = ['video/mp4', 'video/quicktime', 'video/x-msvideo'];
+                    if (!validTypes.includes(file.type)) {
+                        uploadStatus.text('Please select a valid video file (MP4, MOV, or AVI).').css('color', '#dc3545');
+                        this.value = '';
+                        return;
+                    }
+
+                    // Show preview
+                    const fileURL = URL.createObjectURL(file);
+                    videoPreview.src = fileURL;
+                    videoPreview.style.display = 'block';
+                    uploadStatus.text('Video selected: ' + file.name).css('color', '#28a745');
+                }
+            });
+        });
+    </script>
+}

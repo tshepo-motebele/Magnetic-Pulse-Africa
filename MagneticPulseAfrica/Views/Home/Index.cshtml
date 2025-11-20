@@ -1,0 +1,478 @@
+﻿@{
+    ViewBag.Title = "Home - Magnetic Pulse Africa";
+}
+<style>
+    .hero {
+        background: linear-gradient(rgba(0,123,255,0.7), rgba(0,123,255,0.7)), url('/images/hero-background.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 20px; /* Reduced padding to accommodate logo */
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-logo {
+        max-width: 200px; /* Adjust logo size as needed */
+        margin-bottom: 20px; /* Space between logo and title */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-text {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+    }
+
+    /* Previous feature card styles remain the same */
+    .features {
+        padding: 60px 0;
+        position: relative;
+    }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 2.5rem;
+        }
+
+    /* PEMF Explanation Bubble */
+    .pemf-explanation-trigger {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+        .pemf-explanation-trigger::after {
+            content: '▼';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+
+        .pemf-explanation-trigger:hover {
+            color: #007bff;
+        }
+
+        .pemf-explanation-trigger.active::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+    .pemf-explanation-bubble {
+        background-color: #f4f9ff;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,123,255,0.1);
+        padding: 30px;
+        margin-top: 30px;
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+        .pemf-explanation-bubble.active {
+            max-height: 1000px;
+            opacity: 1;
+            padding: 30px;
+        }
+
+        .pemf-explanation-bubble::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #f4f9ff;
+            transform: rotate(0deg);
+        }
+
+    .pemf-explanation-content {
+        color: #495057;
+        line-height: 1.6;
+    }
+
+        .pemf-explanation-content h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .pemf-explanation-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .pemf-explanation-content li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+            .pemf-explanation-content li::before {
+                content: '✓';
+                position: absolute;
+                left: 0;
+                color: #007bff;
+            }
+.feature-card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Add visual indicator for card interaction */
+.feature-card::before {
+    content: 'Tap to flip ↻';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show flip indicator on hover/touch */
+@@media (hover: hover) {
+    .feature-card:hover::before {
+        opacity: 1;
+    }
+}
+
+/* For touch devices */
+@@media (hover: none) {
+    .feature-card::before {
+        opacity: 1;
+    }
+}
+
+/* Improve card faces */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-front {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+.card-back {
+    background: white;
+    transform: rotateY(180deg);
+}
+
+/* Add active state for flipped cards */
+.feature-card.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Add touch feedback */
+@@media (max-width: 768px) {
+    .feature-card:active {
+        transform: scale(0.98);
+    }
+    
+    .feature-card.flipped:active {
+        transform: rotateY(180deg) scale(0.98);
+    }
+}
+
+/* Ensure cards have minimum height on mobile */
+@@media (max-width: 768px) {
+    .feature-card {
+        min-height: 250px;
+        margin-bottom: 20px;
+    }
+}
+
+    .device-showcase {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        margin: 40px 0;
+    }
+
+        .device-showcase h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2.2rem;
+        }
+
+    .carousel-container {
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .device-carousel {
+        background: white;
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+
+        .carousel-item img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 8px;
+        bottom: 20px;
+    }
+
+    .carousel-indicators {
+        bottom: 0;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        opacity: 0.8;
+    }
+
+      @@media (max-width: 768px) {
+        .carousel-item {
+            height: 300px;
+        }
+        
+        .device-showcase {
+            padding: 30px 0;
+        }
+    }
+</style>
+
+<div class="hero section" id="home">
+    <div class="hero-text animate__animated animate__fadeIn">
+        <!-- Add logo here -->
+        <img src="/images/logo.png" alt="Magnetic Pulse Africa Logo" class="hero-logo">
+
+        <h1>Magnetic Pulse Africa</h1>
+        <p>At the Heart of Energy Healing</p>
+        <a href="/Home/Services#services" class="btn btn-light btn-lg">Explore Our Services</a>
+    </div>
+</div>
+
+<section class="features section" id="features">
+    <div class="container">
+        <h2 class="pemf-explanation-trigger">Why Choose PEMF (Boboski) Therapy?</h2>
+
+        <div class="pemf-explanation-bubble">
+            <div class="pemf-explanation-content">
+                <h3>Understanding PEMF Therapy</h3>
+                <p>Pulsed Magnetic Field Therapy is a revolutionary, non-invasive treatment that offers a unique approach to healing and wellness.</p>
+
+                <ul>
+                    <li>Completely non-invasive - No injections or substances introduced to the body</li>
+                    <li>Complementary therapy - Works in conjunction with existing medical treatments</li>
+                    <li>Targets conditions unresponsive to traditional therapies</li>
+                </ul>
+
+                <h3>About Boboski PEMF Device</h3>
+                <p>Boboski is a proudly South African trademarked PEMF device characterized by:</p>
+
+                <ul>
+                    <li>Low magnetic fields and low-frequency technology</li>
+                    <li>Designed for home-use system</li>
+                    <li>Manufactured locally in South Africa</li>
+                    <li>Extensively used with high patient satisfaction</li>
+                </ul>
+
+                <p><strong>Recommendation:</strong> Consider adding PEMF Therapy as a complementary treatment to your existing medical therapy, especially for conditions not effectively addressed by traditional methods.</p>
+            </div>
+        </div>
+
+        <section class="device-showcase">
+            <div class="container">
+                <h2>The Boboski PEMF Device</h2>
+                <div class="carousel-container">
+                    <div id="deviceCarousel" class="carousel slide device-carousel" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/images/IMG-20250115-WA0009.jpg" class="d-block w-100" alt="Boboski PEMF Device Front View">
+                                <div class="carousel-caption">
+                                    <h5>Complete Device Setup</h5>
+                                    <p>The full Boboski PEMF system ready for treatment</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/IMG-20250115-WA0010.jpg" class="d-block w-100" alt="Boboski PEMF Device in Use">
+                                <div class="carousel-caption">
+                                    <h5>Treatment Application</h5>
+                                    <p>Demonstration of device application during therapy</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/IMG-20250115-WA0011.jpg" class="d-block w-100" alt="Boboski PEMF Device Components">
+                                <div class="carousel-caption">
+                                    <h5>Device Components</h5>
+                                    <p>Essential components and accessories included</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#deviceCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#deviceCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <div class="card-front">
+                    <i class="icon-muscle" style="font-size: 3rem; color: white;"></i>
+                    <h3>Muscle Relaxation</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Muscle Relaxation Details</h3>
+                    <p>PEMF helps in conditions like stroke, autism, and cerebral palsy by promoting muscle relaxation and neurological healing.</p>
+                    <ul>
+                        <li>Reduces muscle spasticity</li>
+                        <li>Improves neurological function</li>
+                        <li>Supports rehabilitation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-front">
+                    <i class="icon-pain" style="font-size: 3rem; color: white;"></i>
+                    <h3>Pain Management</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Pain Management Benefits</h3>
+                    <p>Effectively relieve arthritis, joint pain, and injuries through targeted electromagnetic therapy.</p>
+                    <ul>
+                        <li>Reduces inflammation</li>
+                        <li>Accelerates healing</li>
+                        <li>Non-invasive treatment</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-front">
+                    <i class="icon-circulation" style="font-size: 3rem; color: white;"></i>
+                    <h3>Improved Circulation</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Circulation Improvement</h3>
+                    <p>Support healing for diabetes, skin problems, and overall cellular health through enhanced blood flow.</p>
+                    <ul>
+                        <li>Stimulates blood vessels</li>
+                        <li>Promotes oxygen delivery</li>
+                        <li>Supports cellular repair</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="card-front">
+                    <i class="icon-detox" style="font-size: 3rem; color: white;"></i>
+                    <h3>Detox Support</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Detoxification Benefits</h3>
+                    <p>PEMF assists in cellular detoxification, helping remove toxins and supporting overall body wellness.</p>
+                    <ul>
+                        <li>Enhances lymphatic drainage</li>
+                        <li>Supports cellular cleansing</li>
+                        <li>Boosts immune function</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // PEMF Explanation Toggle
+        const explanationTrigger = document.querySelector('.pemf-explanation-trigger');
+        const explanationBubble = document.querySelector('.pemf-explanation-bubble');
+
+        explanationTrigger.addEventListener('click', function () {
+            explanationBubble.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Feature Cards Flip
+        const featureCards = document.querySelectorAll('.feature-card');
+
+        featureCards.forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('flipped');
+            });
+
+            // Add double-tap protection for mobile
+            let lastTap = 0;
+            card.addEventListener('touchend', function (e) {
+                const currentTime = new Date().getTime();
+                const tapLength = currentTime - lastTap;
+
+                if (tapLength < 500 && tapLength > 0) {
+                    e.preventDefault();
+                    return;
+                }
+
+                lastTap = currentTime;
+            });
+        });
+    });
+</script>

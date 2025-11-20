@@ -1,0 +1,409 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\controllers\\testimonialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\testimonialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\testimonialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\serviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\serviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\controllers\\bookconsultationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\controllers\\bookconsultationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\admin\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\admin\\testimonialdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\admin\\testimonialdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\consultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\consultation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\dashboardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\dashboardstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\services\\twiliosmsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\services\\twiliosmsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\bookconsultation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\bookconsultation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\models\\firebaseerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\models\\firebaseerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|c:\\users\\tshep\\desktop\\magneticpulseafrica\\magneticpulseafrica\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E94D95EF-40CA-4FC7-A7AE-007DC598F62E}|MagneticPulseAfrica\\MagneticPulseAfrica.csproj|solutionrelative:magneticpulseafrica\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\LoginModel.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T10:28:12.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAHMBAAAAAAAAAAAswGQBAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T11:10:17.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAOUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T11:12:37.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookConsultationController.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\BookConsultationController.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Controllers\\BookConsultationController.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\BookConsultationController.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Controllers\\BookConsultationController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T10:18:02.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestimonialModel.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\TestimonialModel.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\TestimonialModel.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\TestimonialModel.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\TestimonialModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA6wCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T11:48:00.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\ServiceViewModel.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\ServiceViewModel.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\ServiceViewModel.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\ServiceViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T12:37:10.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAxwFwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T11:15:35.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestimonialController.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\TestimonialController.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Controllers\\TestimonialController.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\TestimonialController.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Controllers\\TestimonialController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAwwGwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T11:49:04.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAMkBAAAAAAAAAAAgwO8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T10:30:05.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv1MAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T11:36:23.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Home\\Services.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Home\\Services.cshtml",
+              "ViewState": "AQIAAO4AAAAAAAAAAAAuwHQBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T09:39:07.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\Details.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Admin\\Details.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\Details.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Admin\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T13:50:04.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAqwGgBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:25:02.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Consultation.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\Consultation.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\Consultation.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\Consultation.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\Consultation.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAqwC4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T11:40:07.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TestimonialDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\TestimonialDetails.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Admin\\TestimonialDetails.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Admin\\TestimonialDetails.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Admin\\TestimonialDetails.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAowGoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-08T11:35:20.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TwilioSmsService.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Services\\TwilioSmsService.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Services\\TwilioSmsService.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Services\\TwilioSmsService.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Services\\TwilioSmsService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvzgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T09:17:25.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\DashboardViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:42:13.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DashboardStats.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\DashboardStats.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\DashboardStats.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\DashboardStats.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\DashboardStats.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T11:43:37.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\BookConsultation\\Index.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\BookConsultation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\BookConsultation\\Index.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\BookConsultation\\Index.cshtml",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAqwL0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-18T11:11:15.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Program.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Program.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Program.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:10:07.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FirebaseError.cs",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\FirebaseError.cs",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Models\\FirebaseError.cs",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Models\\FirebaseError.cs",
+              "RelativeToolTip": "MagneticPulseAfrica\\Models\\FirebaseError.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:01:10.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "MagneticPulseAfrica\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T11:11:05.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\appsettings.json",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\appsettings.json",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\appsettings.json",
+              "RelativeToolTip": "MagneticPulseAfrica\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-18T12:50:08.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MagneticPulseAfrica\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\tshep\\Desktop\\MagneticPulseAfrica\\MagneticPulseAfrica\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MagneticPulseAfrica\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAYwFkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-11T11:13:13.267Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

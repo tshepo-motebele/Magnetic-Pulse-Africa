@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Magnetic Pulse Africa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 60px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .contact-info {
+            width: 40%;
+            background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .contact-info h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+        .contact-details {
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+            .contact-item:hover {
+                transform: translateX(10px);
+            }
+
+            .contact-item i {
+                font-size: 24px;
+                margin-right: 15px;
+                width: 40px;
+                height: 40px;
+                background: rgba(255,255,255,0.1);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        .social-links {
+            margin-top: 40px;
+        }
+
+            .social-links a {
+                color: white;
+                margin-right: 20px;
+                font-size: 24px;
+                transition: transform 0.3s ease;
+                display: inline-block;
+            }
+
+                .social-links a:hover {
+                    transform: scale(1.2);
+                }
+
+        .contact-form {
+            width: 60%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+            .contact-form input:focus,
+            .contact-form textarea:focus {
+                border-color: #007bff;
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+            }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+            .btn-primary:hover {
+                background: #0056b3;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+            }
+
+        @@media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 100%;
+            }
+
+            .contact-info {
+                border-radius: 20px 20px 0 0;
+                padding: 30px;
+            }
+
+            .social-links {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .contact-item {
+                margin-bottom: 15px;
+            }
+        }
+
+        /* Float Action Buttons for Mobile */
+        .float-action-buttons {
+            display: none;
+        }
+
+        @@media (max-width: 768px) {
+            .float-action-buttons {
+                display: flex;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .float-btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-decoration: none;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease;
+            }
+
+                .float-btn:hover {
+                    transform: scale(1.1);
+                }
+
+                .float-btn.whatsapp {
+                    background: #25D366;
+                }
+
+                .float-btn.phone {
+                    background: #007bff;
+                }
+
+                .float-btn.email {
+                    background: #EA4335;
+                }
+
+                .float-btn.facebook {
+                    background: #1877F2;
+                }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div>
+                    <h2>Contact Magnetic Pulse Africa</h2>
+                    <p>We're here to answer your questions. Reach out to us!</p>
+
+
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61572205802279" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+27699997761" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:magneticpulseafrica@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+27699997761" title="Call"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+
+            <form action="/Home/SubmitContact" method="post" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Floating Action Buttons for Mobile -->
+        <div class="float-action-buttons">
+            <a href="https://wa.me/+27699997761" class="float-btn whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+27699997761" class="float-btn phone" title="Call">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="mailto:magneticpulseafrica@gmail.com" class="float-btn email" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572205802279" class="float-btn facebook" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

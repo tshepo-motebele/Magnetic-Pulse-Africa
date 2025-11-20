@@ -1,0 +1,31 @@
+﻿@model List<TestimonialModel>
+
+<div class="testimonials-container">
+    @foreach (var testimonial in Model)
+    {
+        <div class="testimonial-card">
+            <div class="testimonial-header">
+                <h4>@testimonial.Name</h4>
+                <div class="rating">
+                    @for (int i = 0; i < testimonial.Rating; i++)
+                    {
+                        <i class="fas fa-star text-warning"></i>
+                    }
+                </div>
+            </div>
+            <p class="testimonial-text">@testimonial.TestimonialText</p>
+            @if (!string.IsNullOrEmpty(testimonial.VideoUrl))
+            {
+                <div class="video-container">
+                    <video controls class="testimonial-video">
+                        <source src="@testimonial.VideoUrl" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            }
+            <div class="testimonial-date">
+                <small class="text-muted">@testimonial.CreatedAt.ToString("MMMM dd, yyyy")</small>
+            </div>
+        </div>
+    }
+</div>
